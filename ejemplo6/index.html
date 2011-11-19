@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Cargar jQuery - Inacap jQuery</title>
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <script src="plugin.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+          var msj;
+          if (typeof jQuery == 'undefined') {
+            msj = "Rayos, jQuery NO se ha cargado";
+          }
+          else
+          {
+            msj = "Excelente!, Tienes la version "+ $().jquery + " de jQuery";
+          }
+      document.write(msj);
+    </script>
+
+  </body>
+
+    <div id="div_1" class="grupo_1"> DIV con id "div_1", clase "grupo_1" </div>
+    <div id="div_2" class="grupo_1"> DIV con id "div_2", clase "grupo_1" </div>
+    <div id="div_3" class="grupo_2"> DIV con id "div_3", clase "grupo_2" </div>
+    <div id="div_4" class="grupo_2"> DIV con id "div_4", clase "grupo_2" </div>
+
+
+  </html>
